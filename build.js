@@ -11,7 +11,7 @@ const fileContentCache = {};
 function loadFile(fileName) {
   if (!fileContentCache[fileName]) {
     fileContentCache[fileName] = fs
-      .readFileSync(`node_modules/opencc-data/data/${fileName}.txt`, {
+      .readFileSync(`data/${fileName}.txt`, {
         encoding: 'utf-8'
       })
       .trimEnd()

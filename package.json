@@ -16,11 +16,8 @@
   },
   "scripts": {
     "build": "node build.js && rollup -c",
+    "build:dict": "node buildDict.js",
     "test": "node test/node/basic.mjs && node test/node/basic.cjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nk2028/opencc-js.git"
   },
   "author": "The nk2028 Project",
   "keywords": [
@@ -42,7 +39,6 @@
   "homepage": "https://github.com/nk2028/opencc-js#readme",
   "devDependencies": {
     "chai": "~4.3.4",
-    "opencc-data": "~1.0.7",
     "rollup-plugin-generate-package-json": "^3.2.0"
   }
 }
